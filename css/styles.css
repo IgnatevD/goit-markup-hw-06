@@ -838,3 +838,42 @@ img {
 .button-x {
   margin: auto;
 }
+
+.modal-titel {
+  margin-top: 40px;
+  margin-bottom: 12px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+
+  letter-spacing: 0.03em;
+  color: var(--titel-text-color);
+}
+
+.modal-contact {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.modal-contact input {
+  width: 100%t;
+}
+
+.input-name {
+  width: 448px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.input-name-textarea {
+  width: 448px;
+  height: 120px;
+}
+
+.accept-condition {
+  display: flex;
+  width: 425px;
+  margin: 17px 52px 30px;
+}
