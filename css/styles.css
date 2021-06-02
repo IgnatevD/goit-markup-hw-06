@@ -850,38 +850,59 @@ img {
   margin: auto;
 }
 
+.modal-form {
+  padding: 40px;
+}
+
+.modal-conteiner {
+  width: 448px;
+  height: 501px;
+}
+
 .modal-titel {
-  margin-top: 40px;
   margin-bottom: 12px;
 
   font-weight: bold;
   font-size: 20px;
-  line-height: 1.1;
-  text-align: center;
-
+  line-height: 1.15;
+  text-align: justify;
   letter-spacing: 0.03em;
+
   color: var(--titel-text-color);
 }
-.modal-conteiner {
-  width: 448px;
-  height: 501px;
-  margin: 40px;
-  text-align: ;
+
+.modal-contact {
+  margin-bottom: 17px;
 }
 
 .modal-contact input {
-  width: 100%t;
-}
-
-.input-name {
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-bottom: 10px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-size: 16px;
 }
 
-.input-name-textarea {
-  width: 448px;
+.label-modal > p {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: var(--praimeri-text-color);
+}
+
+.label-modal .input-name-textarea {
+  width: 100%;
   height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-size: 16px;
 }
 
 .accept-condition {

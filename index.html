@@ -361,7 +361,7 @@
         </section>
             <div class="backdrop is-hidden" data-modal>
                <div class="modal">
-                   <form>
+                   <form class="modal-form">
                     <div class="modal-conteiner"> 
                         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-contact">
@@ -369,17 +369,20 @@
                                 <p lass="modal-text-name">Имя</p>
                                 <input type="text" class="input-name">
                             </label>
-                            <label>
-                                <p lass="modal-text-tel"> Телефон</p>
+
+                            <label class="label-modal">
+                                <p lass="modal-text-name"> Телефон</p>
                                 <input type="tel" class="input-name">
                             </label>
-                            <label>
-                                <p lass="modal-text-email"> Почта</p>
+
+                            <label class="label-modal">
+                                <p lass="modal-text-name"> Почта</p>
                                 <input type="email" class="input-name">
                             </label>
-                            <label>
-                                <p lass="modal-text">Коментарий</p>
-                                <input  type="text" placeholder="Введите текст" class="input-name-textarea"> </input>
+
+                            <label class="label-modal">
+                                <p lass="modal-text-name">Коментарий</p>
+                                <textarea  type="text" placeholder="Введите текст" rows="5"  class="input-name-textarea"> </textarea>
                             </label>
                         </div>
 
@@ -455,7 +458,7 @@
                 <form name="sanding_mail" action="">
                     <label>
     
-                        <h2 class="form-text-email">Подпишитесь на рассылку</h2>
+                        <p class="form-text-email">Подпишитесь на рассылку</p>
                         <input type="email" placeholder="E-mail" class="input-email">
     
                     </label>
