@@ -466,11 +466,16 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.conteiner-partner {
+  width: 1170px;
+  margin-left: auto;
+  margin: auto;
+}
+
 .partner-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 30px;
 }
 
 .partner-li {
@@ -534,17 +539,16 @@ img {
 /* Футер*/
 .footer {
   background: #2f303a;
-  padding: 60px 215px;
+  padding: 60px 0px;
 }
 
 .footer-conteiner {
   display: flex;
-  width: 1200px;
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
-
-  padding-left: 15px;
+  justify-content: center;
 }
 
 .foter-address {
@@ -640,7 +644,7 @@ img {
 
 /* Форма отправки email */
 .form-email {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .form-text-email {
@@ -661,6 +665,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+
 ::-webkit-input-placeholder {
   font-size: 16px;
   padding-left: 16px;
@@ -690,8 +695,6 @@ img {
 
 /* Страница портфолио сайта */
 .portfolio-section {
-  padding-left: 215px;
-  padding-right: 215px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -792,7 +795,6 @@ img {
 .second-text {
   margin: 63px 24px;
   font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 28px;
   color: var(--white-text-color);
