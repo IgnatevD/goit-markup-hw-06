@@ -3,6 +3,7 @@
   --titel-text-color: #212121;
   --accent-color: #2196f3;
   --white-text-color: #ffffff;
+  --color-icon: #afb1b8;
 }
 
 body {
@@ -233,6 +234,9 @@ img {
 .hero {
   height: 600px;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
   text-align: center;
   background-image: linear-gradient(
       to right,
@@ -297,7 +301,8 @@ img {
   line-height: 24px;
 }
 
-.advange-flex .title {
+.advange-title {
+  font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--titel-text-color);
@@ -339,18 +344,18 @@ img {
 }
 
 .item-work {
+  position: absolute;
   width: 370px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  position: absolute;
   bottom: 0%;
   background: rgba(47, 48, 58, 0.8);
 }
 
 .item-work p {
-  margin-top: 27px;
-  margin-bottom: 27px;
-
   font-weight: bold;
   line-height: 1.15;
   text-align: center;
@@ -363,7 +368,6 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
-  margin-bottom: 94px;
 }
 
 .team-flex {
@@ -441,7 +445,7 @@ img {
   width: 44px;
   height: 44px;
   padding: 12px;
-  fill: var(--praimeri-text-color);
+  fill: var(--color-icon);
 
   transition-property: fill;
   transition-duration: 2250ms;
@@ -458,11 +462,14 @@ img {
 }
 
 /* Постоянные клиенты */
+.section-partner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .partner-flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 94px;
   margin-right: 30px;
 }
 
@@ -505,7 +512,7 @@ img {
   height: inherit;
   padding-top: 21px;
   padding-bottom: 20px;
-  fill: var(--praimeri-text-color);
+  fill: var(--color-icon);
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -527,6 +534,7 @@ img {
 /* Футер*/
 .footer {
   background: #2f303a;
+  padding: 60px 215px;
 }
 
 .footer-conteiner {
@@ -537,8 +545,6 @@ img {
   align-items: center;
 
   padding-left: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .foter-address {
@@ -683,13 +689,15 @@ img {
 }
 
 /* Страница портфолио сайта */
-
-.contenier-portfolio {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+.portfolio-section {
+  padding-left: 215px;
+  padding-right: 215px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.contenier-portfolio {
+  width: 1170px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -704,6 +712,7 @@ img {
 .soting-conteiner {
   margin-bottom: 50px;
 }
+
 .sorting {
   display: flex;
   justify-content: center;
@@ -851,10 +860,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--titel-text-color);
 }
-
-.modal-contact {
-  padding-left: 40px;
-  padding-right: 40px;
+.modal-conteiner {
+  width: 448px;
+  height: 501px;
+  margin: 40px;
+  text-align: ;
 }
 
 .modal-contact input {
