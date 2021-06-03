@@ -366,15 +366,15 @@
                         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-contact">
                             <label class="label-modal">               
-                                <span lass="modal-text-name">Имя</span>
-                                <input type="name" class="input-name">
+                                <span class="modal-text-name">Имя</span>
+                                <input type="text" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-person-modal"> </use>
                                 </svg>
                             </label>
                             
                             <label class="label-modal">
-                                <span lass="modal-text-name"> Телефон</span>
+                                <span class="modal-text-name"> Телефон</span>
                                 <input type="tel" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-telefon-modal"> </use>
@@ -382,7 +382,7 @@
                             </label>
 
                             <label class="label-modal">
-                                <span lass="modal-text-name"> Почта</span>
+                                <span class="modal-text-name"> Почта</span>
                                 <input type="email" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-email-modal"> </use>
@@ -397,11 +397,11 @@
 
                         <div class="accept-condition">  
                             <label class="label-checkbox">
-                                <input type="checkbox" name="hobby" value="reading" />
+                                <input type="checkbox" name="hobby" value="reading" class="input-checkbox"/>
+                                <span class="icon-checkbox"></span>
+                                <span>Соглашаюсь с рассылкой и принимаю  <a href="./index.html">Условия договора</a> </span>
                             </label>
-                            <p>Соглашаюсь с рассылкой и принимаю <span> <a href="./index.html">Условия договора</a></span> </p>
                         </div>
-
                         <button type="submit" class="button">Отправить</button>
                     </div>
                     </form>
@@ -468,10 +468,10 @@
             </div>
     
             <div class="form-email">
-                <form name="sanding_mail" action="" class="form-sanding_mail">
+                <form name="sanding_mail" class="form-sanding_mail">
                     <label class="form-email-label">
     
-                        <p class="form-text-email">Подпишитесь на рассылку</p>
+                        <span class="form-text-email">Подпишитесь на рассылку</span>
                         <input type="email" placeholder="E-mail" class="input-email">
     
                     </label>
@@ -480,7 +480,6 @@
                             <use href="./img/symbol-icon.svg#icon-button"> </use>
                         </svg>
                     </button>
-    
                 </form>
             </div>
         </div>
