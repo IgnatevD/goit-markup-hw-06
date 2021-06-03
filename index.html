@@ -361,28 +361,39 @@
         </section>
             <div class="backdrop is-hidden" data-modal>
                <div class="modal">
-                   <form class="modal-form">
+                    <form class="modal-form">
                     <div class="modal-conteiner"> 
                         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-contact">
                             <label class="label-modal">               
                                 <p lass="modal-text-name">Имя</p>
-                                <input type="text" class="input-name">
+                                <input type="name" class="input-name">
+                                <svg class="icon-button">
+                                    <use href="./img/symbol-icon.svg#icon-person-modal"> </use>
+                                </svg>
                             </label>
-
+                            
                             <label class="label-modal">
                                 <p lass="modal-text-name"> Телефон</p>
                                 <input type="tel" class="input-name">
+                                <svg class="icon-button">
+                                    <use href="./img/symbol-icon.svg#icon-telefon-modal"> </use>
+                                </svg>
                             </label>
 
                             <label class="label-modal">
                                 <p lass="modal-text-name"> Почта</p>
                                 <input type="email" class="input-name">
+                                <svg class="icon-button">
+                                    <use href="./img/symbol-icon.svg#icon-email-modal"> </use>
+                                </svg>
                             </label>
 
-                            <label class="label-modal">
-                                <p lass="modal-text-name">Коментарий</p>
-                                <textarea  type="text" placeholder="Введите текст" rows="5"  class="input-name-textarea"> </textarea>
+                            <label class="label-modal input-name-textarea">
+                                <p class="modal-text-name">Коментарий</p>
+                                <textarea type="text" rows="5" placeholder="Введите текст" class="input-name-textarea"> 
+                                </textarea>
+            
                             </label>
                         </div>
 
@@ -390,14 +401,13 @@
                             <label class="label-checkbox">
                                 <input type="checkbox" name="hobby" value="reading" />
                             </label>
-                            <p>Соглашаюсь с рассылкой и принимаю <span> <a href="">Условия договора</a></span> </p>
+                            <p>Соглашаюсь с рассылкой и принимаю <span> <a href="./index.html">Условия договора</a></span> </p>
                         </div>
 
                         <button type="submit" class="button">Отправить</button>
                     </div>
-                   </form>
-
-                   <button class="button-modal" data-modal-close><img src="./img/Vector-x.svg" alt="Крестик" width="11px" height="11px" class="button-x"></button>
+                    </form>
+                    <button class="button-modal" data-modal-close><img src="./img/Vector-x.svg" alt="Крестик" width="11px" height="11px" class="button-x"></button>
                </div>
             </div>
     </main>
@@ -417,7 +427,7 @@
             </div>
     
             <div class="fotter-link">
-                <h2 class="fotter-titel">Присоединяйтесь</h2>
+                <p class="fotter-titel">Присоединяйтесь</p>
                 <ul class="fotter-list list">
                     <li class="fotter-li">
                         <a href="https://www.instagram.com" target="_blank" class="fotter-instagram link">
@@ -456,14 +466,18 @@
             </div>
     
             <div class="form-email">
-                <form name="sanding_mail" action="">
-                    <label>
+                <form name="sanding_mail" action="" class="form-sanding_mail">
+                    <label class="form-email-label">
     
                         <p class="form-text-email">Подпишитесь на рассылку</p>
                         <input type="email" placeholder="E-mail" class="input-email">
     
                     </label>
-                    <button type="submit" class="button-sanding-email"> Подписаться</button>
+                    <button type="submit" class="button-sanding-email"> Подписаться
+                        <svg class="icon-button">
+                            <use href="./img/symbol-icon.svg#icon-button"> </use>
+                        </svg>
+                    </button>
     
                 </form>
             </div>

@@ -193,7 +193,7 @@ img {
   height: 50px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
+  padding: 10px 30px;
   border-radius: 4px;
   border: 0px;
   color: var(--white-text-color);
@@ -648,6 +648,16 @@ img {
 .form-email {
   margin-left: auto;
 }
+.form-sanding_mail {
+  display: flex;
+  align-items: flex-end;
+}
+
+.form-email-label input {
+  padding-left: 16px;
+  font-size: 20px;
+  color: var(--white-text-color);
+}
 
 .form-text-email {
   margin-bottom: 20px;
@@ -670,11 +680,13 @@ img {
 
 ::-webkit-input-placeholder {
   font-size: 16px;
-  padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .button-sanding-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   width: 200px;
   height: 50px;
@@ -689,10 +701,15 @@ img {
   font-size: 16px;
   line-height: 1.87;
 
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+}
+
+.icon-button {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* Страница портфолио сайта */
@@ -848,6 +865,7 @@ img {
   box-sizing: border-box;
   border-radius: 50%;
 }
+
 .button-x {
   margin: auto;
 }
@@ -859,7 +877,6 @@ img {
 .modal-conteiner {
   width: 448px;
   height: 501px;
-  text-align: center;
 }
 
 .modal-titel {
@@ -885,6 +902,7 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  padding-left: 42px;
 
   font-size: 16px;
 }
@@ -900,6 +918,7 @@ img {
 
 .label-modal .input-name-textarea {
   width: 100%;
+  resize: inherit;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -918,8 +937,8 @@ img {
   margin-right: auto;
   margin-bottom: 17px;
 }
-.label-checkbox {
-  margin-left: 8px;
+.label-checkbox input {
+  margin-right: 8px;
 }
 
 .accept-condition p {
@@ -930,7 +949,34 @@ img {
   color: var(--praimeri-text-color);
 }
 
-.accept-condition span {
+.accept-condition a {
   color: var(--accent-color);
-  text-decoration-line: underline;
+}
+
+.modal-conteiner .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.label-modal {
+  position: relative;
+}
+
+.icon-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  fill: var(--titel-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.label-modal:hover .icon-button,
+.icon-button:focus .icon-button {
+  fill: var(--accent-color);
 }
