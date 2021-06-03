@@ -366,7 +366,7 @@
                         <p class="modal-titel">Оставьте свои данные, мы вам перезвоним</p>
                         <div class="modal-contact">
                             <label class="label-modal">               
-                                <p lass="modal-text-name">Имя</p>
+                                <span lass="modal-text-name">Имя</span>
                                 <input type="name" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-person-modal"> </use>
@@ -374,7 +374,7 @@
                             </label>
                             
                             <label class="label-modal">
-                                <p lass="modal-text-name"> Телефон</p>
+                                <span lass="modal-text-name"> Телефон</span>
                                 <input type="tel" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-telefon-modal"> </use>
@@ -382,7 +382,7 @@
                             </label>
 
                             <label class="label-modal">
-                                <p lass="modal-text-name"> Почта</p>
+                                <span lass="modal-text-name"> Почта</span>
                                 <input type="email" class="input-name">
                                 <svg class="icon-button">
                                     <use href="./img/symbol-icon.svg#icon-email-modal"> </use>
@@ -390,13 +390,8 @@
                             </label>
 
                             <label class="label-modal input-name-textarea">
-                                <p class="modal-text-name">Коментарий</p>
-                                <textarea 
-                                    name="feedback" 
-                                    rows="5" 
-                                    placeholder="Введите текст" 
-                                    class="input-name-textarea"> 
-                                </textarea>
+                                <span class="modal-text-name">Коментарий</span>
+                                <textarea rows="5" placeholder="Введите текст" class="input-textarea"></textarea>
                             </label>
                         </div>
 
@@ -410,7 +405,11 @@
                         <button type="submit" class="button">Отправить</button>
                     </div>
                     </form>
-                    <button class="button-modal" data-modal-close><img src="./img/Vector-x.svg" alt="Крестик" width="11px" height="11px" class="button-x"></button>
+                    <button class="button-modal" data-modal-close>
+                        <svg class="button-x" >
+                            <use href="./img/symbol-icon.svg#icon-Vector-x"> 
+                        </use>
+                    </svg></button>
                </div>
             </div>
     </main>

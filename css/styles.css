@@ -151,9 +151,20 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contacts-nav .link > svg {
+  fill: var(--praimeri-text-color);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .contacts-nav .link:hover,
-.contacts-nav .link:focus {
+.contacts-nav .link:focus,
+.contacts-nav .link:hover > svg,
+.contacts-nav .link:focus > svg {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .item-telefon > span,
@@ -172,19 +183,6 @@ img {
   width: 10px;
   height: 14px;
   margin-right: 10px;
-}
-
-.contacts-nav .link > svg {
-  fill: var(--praimeri-text-color);
-
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts-nav .link:hover > svg,
-.contacts-nav .link:hover > svg {
-  fill: var(--accent-color);
 }
 
 /* button */
@@ -311,14 +309,15 @@ img {
 }
 
 .advange-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
   text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .advange-icon .icon-antenna {
@@ -405,7 +404,7 @@ img {
   font-size: 16px;
   text-align: center;
 }
-/* Ссылки на соцсети */
+/* Команда ссылки на соцсети */
 .team-icon {
   display: flex;
   width: 206px;
@@ -426,21 +425,13 @@ img {
 .icon-li .link {
   width: inherit;
   height: inherit;
+  overflow: hidden;
   border-radius: 50%;
   background-color: var(--white-text-color);
 
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-li .link:hover,
-.icon-li .link:focus {
-  background-color: var(--accent-color);
-}
-
-.icon-li:not(:last-child) {
-  margin-right: 10px;
 }
 
 .icon-network {
@@ -454,9 +445,16 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-network:hover,
-.icon-network:focus {
+.icon-li .link:hover,
+.icon-li .link:focus,
+.icon-li .link:focus > .icon-network,
+.icon-li .link:hover > .icon-network {
+  background-color: var(--accent-color);
   fill: var(--white-text-color);
+}
+
+.icon-li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .shadow {
@@ -494,23 +492,6 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.partner-li:hover,
-.partner-li:focus {
-  border: 1px solid var(--accent-color);
-}
-
-.partner-li:not(:last-child) {
-  margin-right: 30px;
-}
-
-.link-partner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: inherit;
-  height: inherit;
-}
-
 .icon-partner {
   display: flex;
   justify-content: center;
@@ -526,9 +507,24 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-partner:hover,
-.icon-partner:focus {
+.partner-li:hover,
+.partner-li:focus,
+.link-partner:hover > .icon-partner,
+.link-partner:focus > .icon-partner {
+  border: 1px solid var(--accent-color);
   fill: var(--accent-color);
+}
+
+.partner-li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.link-partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  height: inherit;
 }
 
 .foster {
@@ -592,11 +588,6 @@ img {
   height: 80px;
 }
 
-/* .footer .link:hover,
-.footer .link:focus {
-  color: var(--accent-color);
-} */
-
 .fotter-titel {
   color: var(--white-text-color);
   font-weight: bold;
@@ -615,15 +606,8 @@ img {
   align-items: center;
   width: 44px;
   height: 44px;
-  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
   border-radius: 50%;
-
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.fotter-li:hover {
-  background-color: var(--accent-color);
 }
 
 .fotter-li .link {
@@ -632,6 +616,17 @@ img {
   align-items: center;
   width: inherit;
   height: inherit;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fotter-li :hover,
+.fotter-li :focus {
+  background-color: var(--accent-color);
 }
 
 .fotter-li:not(:last-child) {
@@ -676,11 +671,6 @@ img {
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-}
-
-::-webkit-input-placeholder {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
 }
 
 .button-sanding-email {
@@ -859,7 +849,7 @@ img {
   height: 30px;
   right: 8px;
   top: 8px;
-
+  cursor: pointer;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -867,7 +857,19 @@ img {
 }
 
 .button-x {
+  width: 11px;
+  height: 11px;
   margin: auto;
+
+  fill: var(--titel-text-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover > .button-x,
+.button-modal:focus > .button-x {
+  fill: var(--accent-color);
 }
 
 .modal-form {
@@ -907,8 +909,7 @@ img {
   font-size: 16px;
 }
 
-.label-modal > p {
-  margin-bottom: 4px;
+.label-modal {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -916,9 +917,10 @@ img {
   color: var(--praimeri-text-color);
 }
 
-.label-modal > textarea {
+.label-modal .input-textarea {
   width: 100%;
   height: 120px;
+  padding: 12px 16px;
   resize: inherit;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -964,10 +966,10 @@ img {
   position: relative;
 }
 
-.icon-button {
+.label-modal .icon-button {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  top: 45%;
+  transform: translate(0, -60%);
 
   width: 18px;
   height: 18px;
@@ -978,7 +980,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.label-modal:hover .icon-button,
-.label-modal:focus .icon-button {
+.label-modal:hover > .icon-button,
+.input-name:focus > .icon-button {
   fill: var(--accent-color);
+}
+
+.input-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
