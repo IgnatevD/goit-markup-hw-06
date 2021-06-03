@@ -641,24 +641,28 @@ img {
 
 /* Форма отправки email */
 .form-email {
+  width: 570px;
+  height: 86px;
   margin-left: auto;
 }
+
 .form-sanding_mail {
   display: flex;
   align-items: flex-end;
 }
 
-.form-email-label input {
-  padding-left: 16px;
-  font-size: 20px;
-  color: var(--white-text-color);
-}
-
-.form-text-email {
-  margin-bottom: 20px;
+.form-email-label span {
+  display: inline-block;
+  padding-bottom: 20px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.form-email-label input {
+  padding-left: 16px;
+  font-size: 16px;
   color: var(--white-text-color);
 }
 
@@ -678,8 +682,9 @@ img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
+  margin-left: 12px;
   padding: 0;
   border: 0;
   background-color: var(--accent-color);
@@ -970,6 +975,11 @@ img {
 
 .label-modal {
   position: relative;
+}
+
+.label-modal span {
+  display: inline-block;
+  margin-bottom: 4px;
 }
 
 .label-modal .icon-button {
